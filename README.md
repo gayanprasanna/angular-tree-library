@@ -1,6 +1,6 @@
-# 🌳 @gayanprasanna/ngx-tree
+# 🌳 gp-tree-view
 
-[![npm version](https://badge.fury.io/js/%40gayanprasanna%2Fngx-tree.svg)](https://badge.fury.io/js/%40gayanprasanna%2Fngx-tree)
+[![npm version](https://badge.fury.io/js/gp-tree-view.svg)](https://badge.fury.io/js/gp-tree-view)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Angular](https://img.shields.io/badge/Angular-17%2B-red.svg)](https://angular.io/)
 
@@ -24,13 +24,13 @@ A powerful, feature-rich Angular tree component with expand/collapse, search, la
 ### Installation
 
 ```bash
-npm install @gayanprasanna/ngx-tree
+npm install gp-tree-view
 ```
 
 ### Basic Usage
 
 ```typescript
-import { NgxTreeComponent, TreeNode, TreeConfig } from '@gayanprasanna/ngx-tree';
+import { NgxTreeComponent, TreeNode, TreeConfig } from 'gp-tree-view';
 
 @Component({
   selector: 'app-example',

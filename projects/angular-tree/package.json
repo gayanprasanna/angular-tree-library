@@ -1,5 +1,5 @@
 {
-  "name": "@gayanprasanna/ngx-tree",
+  "name": "gp-tree-view",
   "version": "1.0.0",
   "description": "A powerful, feature-rich Angular tree component with expand/collapse, search, lazy loading, and selection capabilities",
   "keywords": [
