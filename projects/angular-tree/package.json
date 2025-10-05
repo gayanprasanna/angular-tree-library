@@ -1,0 +1,66 @@
+{
+  "name": "gp-tree-view",
+  "version": "1.0.0",
+  "description": "A powerful, feature-rich Angular tree component with expand/collapse, search, lazy loading, and selection capabilities",
+  "keywords": [
+    "angular",
+    "tree",
+    "component",
+    "expand",
+    "collapse",
+    "search",
+    "lazy-loading",
+    "selection",
+    "checkbox",
+    "typescript",
+    "ngx",
+    "ui-component"
+  ],
+  "author": {
+    "name": "Gayan Prasanna",
+    "email": "gayanprasanna@example.com",
+    "url": "https://github.com/gayanprasanna"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gayanprasanna/angular-tree-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gayanprasanna/angular-tree-library/issues"
+  },
+  "homepage": "https://github.com/gayanprasanna/angular-tree-library#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "dist/angular-tree/fesm2022/gayanprasanna-ngx-tree.mjs",
+  "module": "dist/angular-tree/fesm2022/gayanprasanna-ngx-tree.mjs",
+  "es2022": "dist/angular-tree/fesm2022/gayanprasanna-ngx-tree.mjs",
+  "esm2022": "dist/angular-tree/esm2022/gayanprasanna-ngx-tree.mjs",
+  "fesm2022": "dist/angular-tree/fesm2022/gayanprasanna-ngx-tree.mjs",
+  "typings": "dist/angular-tree/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/angular-tree/fesm2022/gayanprasanna-ngx-tree.mjs",
+      "require": "./dist/angular-tree/fesm2022/gayanprasanna-ngx-tree.mjs",
+      "types": "./dist/angular-tree/index.d.ts"
+    }
+  },
+  "peerDependencies": {
+    "@angular/common": "^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0",
+    "@angular/core": "^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0",
+    "@angular/forms": "^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
