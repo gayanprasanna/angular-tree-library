@@ -11,7 +11,7 @@ import {
   TreeNodeExpandEvent,
   TreeNodeSelectEvent,
   LazyLoadEvent,
-} from 'gp-tree-view';
+} from '../../../angular-tree/src/public-api';
 
 @Component({
   selector: 'app-root',
