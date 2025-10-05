@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gp-tree-view Demo</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .header {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      .header p {
+        margin: 10px 0 0 0;
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+      .content {
+        padding: 40px;
+      }
+      .demo-section {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 30px;
+        margin: 20px 0;
+        border-left: 4px solid #4facfe;
+      }
+      .demo-section h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .feature-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+      }
+      .feature-item {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      .feature-item h3 {
+        margin-top: 0;
+        color: #4facfe;
+      }
+      .install-section {
+        background: #2d3748;
+        color: white;
+        padding: 30px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+      .install-section h2 {
+        margin-top: 0;
+        color: #4facfe;
+      }
+      .code-block {
+        background: #1a202c;
+        color: #e2e8f0;
+        padding: 20px;
+        border-radius: 6px;
+        font-family: 'Monaco', 'Menlo', monospace;
+        font-size: 14px;
+        overflow-x: auto;
+        margin: 15px 0;
+      }
+      .badge {
+        display: inline-block;
+        background: #4facfe;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 10px 10px 10px 0;
+        transition: transform 0.2s;
+      }
+      .badge:hover {
+        transform: translateY(-2px);
+        text-decoration: none;
+        color: white;
+      }
+      .badge.npm {
+        background: #cb0000;
+      }
+      .badge.github {
+        background: #24292e;
+      }
+      .footer {
+        background: #f8f9fa;
+        padding: 30px;
+        text-align: center;
+        color: #666;
+        border-top: 1px solid #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🌳 gp-tree-view</h1>
+        <p>A modern, feature-rich Angular tree component library</p>
+      </div>
+
+      <div class="content">
+        <div class="demo-section">
+          <h2>🚀 Live Demo</h2>
+          <p>Check out our interactive demo to see all the features in action!</p>
+          <p>
+            <strong>Note:</strong> The full interactive demo is currently being deployed. Check back
+            in a few minutes!
+          </p>
+          <div class="badge npm">📦 npm install gp-tree-view</div>
+          <div class="badge github">🐙 View on GitHub</div>
+        </div>
+
+        <div class="demo-section">
+          <h2>✨ Features</h2>
+          <div class="feature-list">
+            <div class="feature-item">
+              <h3>🎯 Smart Selection</h3>
+              <p>
+                Single or multiple node selection with checkboxes. Programmatic control over
+                selections.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3>🔍 Powerful Search</h3>
+              <p>Real-time search and filtering with customizable placeholders and search logic.</p>
+            </div>
+            <div class="feature-item">
+              <h3>⚡ Lazy Loading</h3>
+              <p>Load child nodes on-demand for better performance with large datasets.</p>
+            </div>
+            <div class="feature-item">
+              <h3>🎨 Customizable UI</h3>
+              <p>Configurable icons, animations, and control panels to match your design.</p>
+            </div>
+            <div class="feature-item">
+              <h3>🛠️ Programmatic Control</h3>
+              <p>Expand, collapse, and select nodes programmatically with simple API methods.</p>
+            </div>
+            <div class="feature-item">
+              <h3>📱 Responsive Design</h3>
+              <p>Works beautifully on desktop, tablet, and mobile devices.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="install-section">
+          <h2>📦 Installation</h2>
+          <p>Install the package from npm:</p>
+          <div class="code-block">npm install gp-tree-view</div>
+
+          <h3>Basic Usage</h3>
+          <div class="code-block">
+            import { NgxTreeComponent, TreeNode, TreeConfig } from 'gp-tree-view'; // In your
+            component treeNodes: TreeNode[] = [ { id: '1', label: 'Root Node', hasChildren: true,
+            children: [ { id: '1-1', label: 'Child Node 1' }, { id: '1-2', label: 'Child Node 2' } ]
+            } ]; treeConfig: TreeConfig = { showCheckboxes: true, searchable: true,
+            allowMultipleSelection: true };
+          </div>
+        </div>
+
+        <div class="demo-section">
+          <h2>🎮 Programmatic Control</h2>
+          <p>Control your tree programmatically with these methods:</p>
+          <div class="code-block">
+            // Expand/collapse all nodes treeComponent.expandAllProgrammatically();
+            treeComponent.collapseAllProgrammatically(); // Control specific nodes
+            treeComponent.expandNodeById('node-id'); treeComponent.selectNodeById('node-id'); // Get
+            selected nodes const selected = treeComponent.getSelectedNodes();
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Built with ❤️ by Gayan Prasanna</p>
+        <p>
+          <a href="https://github.com/gayanprasanna/angular-tree-library" class="badge">GitHub</a>
+          <a href="https://www.npmjs.com/package/gp-tree-view" class="badge npm">npm</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

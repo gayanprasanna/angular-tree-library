@@ -11,7 +11,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "pack": "cd dist/angular-tree && npm pack",
-    "publish:lib": "npm run build && cd dist/angular-tree && npm publish"
+    "publish:lib": "npm run build && cd dist/angular-tree && npm publish",
+    "deploy": "ng build demo-app --configuration production --base-href /angular-tree-library/ && npx angular-cli-ghpages --dir=dist/demo-app/browser",
+    "deploy:setup": "ng build demo-app --configuration production --base-href /angular-tree-library/"
   },
   "prettier": {
     "printWidth": 100,
@@ -42,6 +44,7 @@
     "@angular/cli": "^20.3.4",
     "@angular/compiler-cli": "^20.3.0",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
